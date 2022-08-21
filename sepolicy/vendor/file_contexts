@@ -88,6 +88,9 @@
 /efs/ssm(/.*)?             u:object_r:ssm_efs_file:s0
 /efs/usb_hw_param(/.*)?    u:object_r:sec_efs_file:s0
 
+# Exynos990 HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb-service.exynos990                                   u:object_r:hal_usb_default_exec:s0
+
 /mnt/vendor/efs/wv\.keys   u:object_r:sec_efs_file:s0
 
 ####################################
