@@ -19,10 +19,6 @@ COMMON_PATH := device/samsung/exynos990-common
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/exynos990-common/exynos990-common-vendor.mk)
 
-# AdvancedDisplay (MDNIE)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
@@ -98,10 +94,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samsung
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -181,8 +173,6 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/samsung/exynos990-common/overlay/hardware/samsung/AdvancedDisplay
 
 # Permissions
 PRODUCT_COPY_FILES += \
