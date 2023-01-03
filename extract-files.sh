@@ -82,6 +82,9 @@ function blob_fixup() {
         vendor/lib*/libexynosdisplay.so|vendor/lib*/hw/hwcomposer.exynos990.so|vendor/lib*/sensors.*.so)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
+        vendor/lib*/libtriplecam_*.so)
+            "${PATCHELF}" --replace-needed libmpbase.so libmpbase_exynos990.so "${2}"
+            ;;
     esac
 }
 

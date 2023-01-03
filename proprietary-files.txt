@@ -136,7 +136,7 @@ vendor/firmware/bcmdhd_sta.bin_b1
 -vendor/lib/libgiantmscl.so
 -vendor/lib/libhwjpeg.so
 -vendor/lib/libhwjsqz.so
--vendor/lib/libmpbase.so
+-vendor/lib/libmpbase.so;MODULE=libmpbase_exynos990
 -vendor/lib/libsensorlistener.so
 -vendor/lib/libstagefrighthw.so
 -vendor/lib/libtriplecam_image_optical_zoom.so
