@@ -146,7 +146,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 
 ## Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.exynos990
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.exynos990
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 
 ## Releasetools
