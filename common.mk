@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.samsung
+    android.hardware.biometrics.fingerprint@2.3-service.exynos990
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -106,8 +106,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.samsung \
-    android.hardware.health-service.samsung-recovery
+    android.hardware.health-service.exynos990 \
+    android.hardware.health-service.exynos990-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -133,12 +133,12 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.0-service.exynos990 \
     libkeymaster4_1support.vendor:64
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
+    android.hardware.light-service.exynos990
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -230,7 +230,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor:64 \
-    android.hardware.power-service.samsung-libperfmgr
+    android.hardware.power-service.exynos990-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -257,7 +257,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor:64 \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.exynos990-multihal
 
 # Shims
 PRODUCT_PACKAGES += \
@@ -273,7 +273,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.samsung
+    android.hardware.thermal@2.0-service.exynos990
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
@@ -284,7 +284,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung
+    android.hardware.vibrator-service.exynos990
 
 # VNDK
 PRODUCT_PACKAGES += \

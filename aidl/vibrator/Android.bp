@@ -5,10 +5,10 @@
 //
 
 cc_binary {
-    name: "android.hardware.vibrator-service.samsung",
+    name: "android.hardware.vibrator-service.exynos990",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.vibrator-service.samsung.rc"],
-    vintf_fragments: ["android.hardware.vibrator-service.samsung.xml"],
+    init_rc: ["android.hardware.vibrator-service.exynos990.rc"],
+    vintf_fragments: ["android.hardware.vibrator-service.exynos990.xml"],
     srcs: [
         "Vibrator.cpp",
         "service.cpp",

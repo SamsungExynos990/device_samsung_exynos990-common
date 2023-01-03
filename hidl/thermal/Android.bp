@@ -1,13 +1,13 @@
 cc_binary {
-  name: "android.hardware.thermal@2.0-service.samsung",
+  name: "android.hardware.thermal@2.0-service.exynos990",
   defaults: [
     "hidl_defaults",
   ],
   vendor: true,
   relative_install_path: "hw",
-  vintf_fragments: ["android.hardware.thermal@2.0-service.samsung.xml"],
+  vintf_fragments: ["android.hardware.thermal@2.0-service.exynos990.xml"],
   init_rc: [
-    "android.hardware.thermal@2.0-service.samsung.rc",
+    "android.hardware.thermal@2.0-service.exynos990.rc",
   ],
   srcs: [
     "service.cpp",
@@ -46,10 +46,10 @@ cc_binary {
 }
 
 sh_binary {
-  name: "thermal_logd.samsung",
+  name: "thermal_logd.exynos990",
   src: "init.thermal.logging.sh",
   vendor: true,
   init_rc: [
-    "samsung-thermal-logd.rc",
+    "exynos990-thermal-logd.rc",
   ],
 }
